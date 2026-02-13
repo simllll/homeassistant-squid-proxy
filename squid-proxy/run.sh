@@ -221,9 +221,6 @@ acl authenticated proxy_auth REQUIRED
 http_access allow manager localhost
 http_access deny manager
 
-http_access deny !Safe_ports
-http_access deny CONNECT !SSL_ports
-
 ${NETWORK_ACL_LINES}
 
 ${ACCESS_RULES}
